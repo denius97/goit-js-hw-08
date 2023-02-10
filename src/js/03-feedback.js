@@ -8,7 +8,7 @@ if (localStorage.getItem('feedback-form-state')) {
     feedbackForm.email.value = storageData.email;
     feedbackForm.message.value = storageData.message;
   } catch (err) {
-    console.log('Error', err);
+    console.log('Error local storage parse', err);
   }
 }
 
